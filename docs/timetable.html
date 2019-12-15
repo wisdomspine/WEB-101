@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timetable</title>
+    <style>
+        *{
+            box-sizing: border-box!important;
+            text-transform: uppercase;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            padding: 15px;
+        }
+        table{
+            width: 100%;
+            min-height: 100%;
+            border-collapse: collapse;
+        }
+
+        td, th, table{
+            border: 1px solid #434356;
+        }
+        td, th{
+            padding: 5px 10px;
+            text-align: center;
+        }
+        td, th{
+            display: table-cell;
+        }
+
+
+        .divider{
+            height: 4px;
+
+        }
+
+        .day{
+            font-weight: 600;
+        }
+        caption{
+            text-align: center;
+        }
+        col:nth-child(odd){
+            background-color: #cdcddc;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <caption>
+            <h1>
+                Faculty of science lecture time table
+            </h1>
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">s/n</th>
+                <th scope="col">days</th>
+                <th scope="col">time</th>
+                <th scope="col">aud ps</th>
+                <th scope="col">mph(272)</th>
+                <th scope="col">art mph</th>
+                <th scope="col">gc1(80)</th>
+                <th scope="col">gc2(64)</th>
+                <th scope="col">gc3(80)</th>
+                <th scope="col">gc4(80)</th>
+                <th scope="col">fc1(lab)</th>
+                <th scope="col">fc4(60)</th>
+                <th scope="col">sd01(40)</th>
+                <th scope="col">sd02(50)</th>
+                <th scope="col">sd03(50)</th>
+                <th scope="col">sd05(40)</th>
+                <th scope="col">chm lab</th>
+                <th scope="col">phy lab</th>
+                <th scope="col">mcb lab</th>
+                <th scope="col">bot lab</th>
+                <th scope="col">zoo lab</th>
+                <th scope="col">bch lab</th>
+            </tr>
+        </thead>
+        <tbody>
+    
+            <tr>
+                <td>1</td> 
+                <td class="day">Monday</td> 
+                <td>7-8am</td> 
+                <td rowspan="2">gst 121</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr>
+            <tr>
+                <td>2</td> 
+                <td></td> 
+                <td>8-9am</td> 
+                <!--<td rowspan="2">gst 121</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td>Mth 321</td> 
+                <td>mth 424</td> 
+                <td></td> 
+                <td>csc 421</td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">zly 421</td> 
+                <td rowspan="2">chm 426</td> 
+                <td rowspan="2">bot 224</td> 
+                <td></td> 
+                <td rowspan="2">phy 426</td> 
+                <td rowspan="2">mcb 422</td> 
+                <td></td> 
+                <td></td>                 
+                <td rowspan="2"> bch 421</td> 
+            </tr> 
+            <tr>
+                <td>3</td> 
+                <td></td> 
+                <td>9-10am</td> 
+                <td></td>
+                <td>mth223</td> 
+                <td></td> 
+                <td rowspan="2">chm 221</td> 
+                <!--<td>Mth 321</td> -->
+                <td rowspan="2">zly 224</td> 
+                <td></td> 
+                <td>csc 421</td> 
+                <td rowspan="2">mth 224</td> 
+                <td></td> 
+                <!--<td>zly 421</td> -->
+                <!--<td>chm 426</td> -->
+                <!--<td>bot 224</td> -->
+                <td></td> 
+                <!--<td>phy 426</td> -->
+                <!--<td>mcb 422</td> -->
+                <td></td> 
+                <td></td> 
+                <!--<td> bch 421</td> -->
+            </tr>  
+            <tr>
+                <td>4</td> 
+                <td></td> 
+                <td>10-11am</td> 
+                <td></td>
+                <td rowspan="2">bch 224</td> 
+                <td></td> 
+                <!--<td>chm 221</td> -->
+                <td>mth 322</td> 
+                <!--<td>zly 224</td> -->
+                <td></td> 
+                <td></td> 
+                <!--<td>mth 224</td> -->
+                <td rowspan="2">bot 422</td> 
+                <td rowspan="2">phy 421</td> 
+                <td rowspan="2">chm 427</td> 
+                <td rowspan="2">bot 226</td> 
+                <td></td> 
+                <td rowspan="2">phy 427</td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="3">zly 421p</td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>5</td> 
+                <td></td> 
+                <td>11-12pm</td> 
+                <td></td>
+                <!--<td>bch 224</td> -->
+                <td></td> 
+                <td rowspan="2">chm 222</td> 
+                <!--<td>mth 322</td> -->
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">csc 422</td> 
+                <td rowspan="2">mth 225</td> 
+                <!--<td>bot 422</td> -->
+                <!--<td>phy 421</td> -->
+                <!--<td>chm 427</td> -->
+                <!--<td>bot 226</td> -->
+                <td></td> 
+                <!--<td>phy 427</td> -->
+                <td rowspan="3">mcb 424p</td> 
+                <td></td> 
+                <!--<td>zly 421p</td> -->
+                <td></td> 
+                <td></td>
+            </tr> 
+            <tr>
+                <td>6</td> 
+                <td></td> 
+                <td>12-1pm</td> 
+                <td rowspan="2" colspan="2">chm 121</td>
+                <!--<td>chm 121</td> -->
+                <td></td> 
+                <!--<td>chm 222</td> -->
+                <td rowspan="2">sta 221</td> 
+                <td rowspan="2">bch 221</td> 
+                <td></td> 
+                <!--<td>csc 422</td> -->
+                <!--<td>mth 225</td> -->
+                <td rowspan="3">bot 426</td>
+                <td rowspan="2">phy 422</td> 
+                <td></td> 
+                <td rowspan="2">mth 421</td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>mcb 424p</td> -->
+                <td></td> 
+                <!--<td>zly 421p</td> -->
+                <td rowspan="2">bch 422</td> 
+            </tr> 
+            <tr>
+                <td>7</td> 
+                <td></td> 
+                <td>1-2pm</td> 
+                <!--<td>chm 121</td>-->
+                <!--<td>chm 121</td> -->
+                <td></td> 
+                <td></td> 
+                <!--<td>sta 221</td> -->
+                <!--<td>bch 221</td> -->
+                <td></td> 
+                <!--<td>csc 427</td> -->
+                <td></td> 
+                <!--<td>bot 426</td> -->
+                <!--<td>phy 422</td> -->
+                <td></td> 
+                <!--<td>mth 421</td> -->
+                <td></td> 
+                <td rowspan="2">phy 224</td> 
+                <!--<td>mcb 424p</td> -->
+                <td></td> 
+                <td></td> 
+                <td>bch 422</td> 
+            </tr> 
+            <tr>
+                <td>8</td> 
+                <td></td> 
+                <td>2-3pm</td> 
+                <td></td>
+                <td rowspan="2">csc 225</td> 
+                <td></td> 
+                <td rowspan="2">phy 224</td> 
+                <td></td> 
+                <td rowspan="2">zly 225</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>bot 426</td> -->
+                <td></td> 
+                <td rowspan="2">zly 422</td> 
+                <td rowspan="2">mth 422</td> 
+                <td rowspan="2">chm 424</td> 
+                <!--<td>phy 224</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>9</td> 
+                <td></td> 
+                <td>3-4pm</td> 
+                <td></td>
+                <!--<td>csc 225</td> -->
+                <td></td> 
+                <!--<td>phy 224</td> -->
+                <td></td> 
+                <!--<td>zly 225</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">gly 228</td> 
+                <td></td> 
+                <!--<td>zly 422</td> -->
+                <!--<td>mth 422</td> -->
+                <!--<td>chm 424</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="3">zly 121p</td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>10</td> 
+                <td></td> 
+                <td>4-5pm</td> 
+                <td></td>
+                <td rowspan="2">mcb 222</td> 
+                <td rowspan="2">csc 221</td> 
+                <td rowspan="2">phy 221</td> 
+                <td></td> 
+                <td>bch 221</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>gly 228</td> -->
+                <td rowspan="2">zly 221</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>zly 121p</td> -->
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>11</td> 
+                <td></td> 
+                <td>5-6pm</td> 
+                <td></td>
+                <!--<td>mcb 222</td> -->
+                <!--<td>csc 221</td> -->
+                <!--<td>phy 221</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>zly 221</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>zly 121p</td> -->
+                <td></td> 
+            </tr> 
+            <tr class="divider"></tr>
+            <tr>
+                <td>12</td> 
+                <td  class="day">tuesday</td> 
+                <td>7-8am</td> 
+                <td rowspan="2">gst 122</td>
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>13</td> 
+                <td></td> 
+                <td>8-9am</td> 
+                <!--<td>gst 122</td>-->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">csc 423</td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">phy 424</td> 
+                <td></td> 
+                <td rowspan="2">zly 423</td> 
+                <td rowspan="2">chm 421</td> 
+                <td rowspan="2">phy 428</td> 
+                <td rowspan="2">mcb 424</td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">bch 423</td> 
+            </tr> 
+            <tr>
+                <td>14</td> 
+                <td></td> 
+                <td>9-10am</td> 
+                <td></td>
+                <td>csc 228</td> 
+                <td></td> 
+                <td></td> 
+                <td>sta 221</td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>csc 423</td> -->
+                <td rowspan="2">mth 323</td> 
+                <td rowspan="3">gly 224</td> 
+                <!--<td>phy 424</td> -->
+                <td rowspan="2">mcb 224</td> 
+                <!--<td>zly 423</td> -->
+                <!--<td>chm 421</td> -->
+                <!--<td>phy 428</td> -->
+                <!--<td>mcb 424</td> -->
+                <td></td> 
+                <td></td> 
+                <!--<td>bch 423</td> -->
+            </tr> 
+            <tr>
+                <td>15</td> 
+                <td></td> 
+                <td>10-11am</td> 
+                <td colspan="2">phy 121</td>
+                <!--<td>phy 121</td> -->
+                <td></td> 
+                <td>phy 121</td> 
+                <td rowspan="2"> mth 123</td> 
+                <td>phy 121</td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>mth 323</td> -->
+                <!--<td>gly 224</td> -->
+                <td rowspan="2">bot 428</td> 
+                <!--<td>mcb 224</td> -->
+                <td rowspan="2">bot 228</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="3">zly 423p</td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>16</td> 
+                <td></td> 
+                <td>11-12pm</td> 
+                <td rowspan="2" colspan="2">bly 122</td>
+                <!--<td></td> -->
+                <td></td> 
+                <td rowspan="2">bly 122</td> 
+                <!--<td>mth 123</td> -->
+                <td rowspan="2">bly 122</td> 
+                <td></td> 
+                <td rowspan="2">csc 424</td> 
+                <td rowspan="2">sta 222</td> 
+                <!--<td>gly 224</td> -->
+                <!--<td>bot 428</td> -->
+                <td rowspan="2">mth 321</td> 
+                <!--<td>bot 228</td> -->
+                <td rowspan="2">chm 428</td> 
+                <td rowspan="2">phy 441</td> 
+                <td>mcb 442</td> 
+                <td></td> 
+                <!--<td>zly 423p</td> -->
+                <td rowspan="2">bch 424</td> 
+            </tr> 
+            <tr>
+                <td>17</td> 
+                <td></td> 
+                <td>12-1pm</td> 
+                <!--<td>bly 122</td>-->
+                <!--<td>bly 122</td> -->
+                <td></td> 
+                <!--<td>bly 122</td> -->
+                <td>bly 122</td> 
+                <!--<td>bly 122</td> -->
+                <td></td> 
+                <!--<td>csc 424</td> -->
+                <!--<td>sta 222</td> -->
+                <td></td> 
+                <td>bot 426</td> 
+                <!--<td>mth 321</td> -->
+                <td>bot 224</td> 
+                <!--<td>chm 428</td> -->
+                <!--<td>phy 441</td> -->
+                <!--<td>mcb 421</td> -->
+                <td></td> 
+                <!--<td>zly 423</td> -->
+                <!--<td>bcg 424</td> -->
+            </tr> 
+            <tr>
+                <td>18</td> 
+                <td></td> 
+                <td>1-2pm</td> 
+                <td colspan="2">mth 121</td>
+                <!--<td>mth 121</td> -->
+                <td></td> 
+                <!--<td>mth 121</td> -->
+                <td>mth 226</td> 
+                <td>mth 121</td> 
+                <td></td> 
+                <!--<td>csc 426</td> -->
+                <td>sta 224</td> 
+                <td>gly 225</td> 
+                <td rowspan="2">phy 227</td> 
+                <td></td> 
+                <td rowspan="2">phy 429</td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>mcb 421</td> -->
+                <td></td> 
+                <!--<td>zly 225p</td> -->
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> 
+            <tr>
+                <td>19</td> 
+                <td></td> 
+                <td>2-3pm</td> 
+                <td></td>
+                <td rowspan="2">bly 226</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">mth 221</td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">bot 425</td> 
+                <td>gly 227</td> 
+                <!--<td>phy 227</td> -->
+                <td rowspan="2">chm 429</td> 
+                <!--<td>phy 429</td> -->
+                <td rowspan="3" colspan="3">chm 123</td> 
+                <!--<td>chm 123</td> -->
+                <td>zly 426</td> 
+                <!--<td>zly 225p</td> -->
+                <td></td> 
+                <td></td>
+            </tr> 
+            <tr>
+                <td>20</td> 
+                <td></td> 
+                <td>3-4pm</td> 
+                <td></td>
+                <!--<td>bly 226</td> -->
+                <td></td> 
+                <!--<td rowspan="2">phy 222</td> -->
+                <td></td> 
+                <!--<td>mth 221</td> -->
+                <td></td> 
+                <td rowspan="2">csc 222p</td> 
+                <!--<td>bot 425</td> -->
+                <td></td> 
+                <td></td> 
+                <!--<td>chm 429</td> -->
+                <td></td> 
+                <!--<td>chm 123</td> -->
+                <!--<td>chm 123</td> -->
+                <!--<td>chm 123</td> -->
+                <td>zly 427</td> 
+                <!--<td>zly 225p</td> -->
+                <td></td> 
+                <td></td>
+                <td></td>
+            </tr> 
+            <tr>
+                <td>21</td> 
+                <td></td> 
+                <td>4-5pm</td> 
+                <td></td>
+                <td rowspan="2">bch 22</td> 
+                <td></td> 
+                <!--<td>phy 222</td> -->
+                <td></td> 
+                <td>sta 227</td> 
+                <td></td> 
+                <!--<td>csc 222p</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">bot 222</td>
+                <td></td> 
+                <!--<td>chm 123</td> -->
+                <!--<td>chm 123</td> -->
+                <!--<td>chm 123</td> -->
+                <td></td> 
+                <td rowspan="2">zly 222</td> 
+                <td></td> 
+                <td></td>
+            </tr> 
+            <tr>
+                <td>22</td> 
+                <td></td> 
+                <td>5-6pm</td> 
+                <td></td>
+                <!--<td>bch 222</td> -->
+                <td>csc 224</td> 
+                <td></td> 
+                <td></td> 
+                <td>sta 241</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>bot 222</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>zly 222</td> -->
+                <td></td> 
+            </tr> 
+            <tr class="divider"></tr>
+            <tr>
+                <td>23</td> 
+                <td class="day">wednesday</td> 
+                <td>7-8am</td> 
+                <td></td>
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>24</td> 
+                <td></td> 
+                <td>8-9am</td> 
+                <td></td>
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>25</td> 
+                <td></td> 
+                <td>9-10am</td> 
+                <td></td>
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>26</td> 
+                <td></td> 
+                <td>10-11am</td> 
+                <td></td>
+                <td rowspan="2">csc 222</td> 
+                <td></td> 
+                <td rowspan="2">chm 225</td> 
+                <td rowspan="2">mth 325</td> 
+                <td rowspan="2">mth 222</td> 
+                <td></td> 
+                <td rowspan="2">csc 426</td> 
+                <td rowspan="2">sta 122</td> 
+                <td rowspan="2">gly 221</td> 
+                <td rowspan="2">mcb 442</td> 
+                <td rowspan="2">chm 425</td> 
+                <td rowspan="2">zly 424</td> 
+                <td rowspan="2" colspan="3">bly 224p</td> 
+                <!--<td></td> -->
+                <!--<td></td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>27</td> 
+                <td></td> 
+                <td>11-12pm</td> 
+                <!--<td>csc 222</td>-->
+                <td></td> 
+                <!--<td>chm 225</td> -->
+                <!--<td>mth 325</td> -->
+                <!--<td>mth 222</td> -->
+                <td></td> 
+                <!--<td>csc 426</td> -->
+                <!--<td>sta 122</td> -->
+                <!--<td>gly 221</td> -->
+                <!--<td>mcb 442</td> -->
+                <!--<td>chm 425</td> -->
+                <!--<td>zly 424</td> -->
+                <!--<td>bly 224p</td> -->
+                <!--<td>bly 224p</td> -->
+                <!--<td>bly 224p</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>28</td> 
+                <td></td> 
+                <td>12-1pm</td> 
+                <td></td>
+                <td rowspan="2">sta 121</td> 
+                <td></td> 
+                <td rowspan="2">chm 227</td> 
+                <td rowspan="2">mth 324</td> 
+                <td>bch 224</td> 
+                <td></td> 
+                <td>csc 421</td> 
+                <td>mth 221</td> 
+                <td rowspan="2">gly 223</td> 
+                <td>mcb 426</td> 
+                <td>phy 421</td> 
+                <td>zly 422</td> 
+                <td rowspan="3">bch 223</td> 
+                <td></td> 
+                <td rowspan="2">mcb 121</td> 
+                <td></td> 
+                <td rowspan="3">zly 221p</td> 
+                <td rowspan="2">bch 425</td> 
+            </tr> 
+            <tr>
+                <td>29</td> 
+                <td></td> 
+                <td>1-2pm</td> 
+                <td></td>
+                <!--<td>sta 121</td> -->
+                <td></td> 
+                <!--<td>chm 227</td> -->
+                <!--<td>mth 324</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td>mth 225</td> 
+                <!--<td>gly 223</td> -->
+                <td rowspan="2">bot 421</td> 
+                <td>phy 222</td> 
+                <td></td> 
+                <!--<td>bch 223</td> -->
+                <td></td> 
+                <!--<td>mcb 121</td> -->
+                <td></td> 
+                <!--<td>zly 221p</td> -->
+                <!--<td>bch 425</td> -->
+            </tr> 
+            <tr>
+                <td>30</td> 
+                <td></td> 
+                <td>2-3pm</td> 
+                <td rowspan="2" colspan="2">bly 121</td>
+                <!--<td>bly 121</td> -->
+                <td></td> 
+                <td rowspan="2">bly 121</td> 
+                <td rowspan="2">sta 223</td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">sta 427</td> 
+                <td>mth 326</td> 
+                <td></td> 
+                <!--<td>bot 421</td> -->
+                <td rowspan="2">py 421</td> 
+                <td></td> 
+                <!--<td>bch 223</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>zly 221p</td> -->
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>31</td> 
+                <td></td> 
+                <td>3-4pm</td> 
+                <!--<td>bly 121</td>-->
+                <!--<td>bly 121</td> -->
+                <td></td> 
+                <!--<td>bly 121</td> -->
+                <!--<td>sta 223</td> -->
+                <td></td> 
+                <td></td> 
+                <!--<td>csc 427</td> -->
+                <td></td> 
+                <td></td> 
+                <td>bot 428</td> 
+                <!--<td>phy 423</td> -->
+                <td></td> 
+                <td rowspan="3" colspan="3">mcb 224ap</td> 
+                <!--<td>mcb 224ap</td> -->
+                <!--<td>mcb 224ap</td> -->
+                <td></td> 
+                <td rowspan="3">zly 424p</td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>32</td> 
+                <td></td> 
+                <td>4-5pm</td> 
+                <td></td>
+                <td rowspan="2">mth 122</td> 
+                <td rowspan="2">csc 224</td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">sta 224</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td></td> -->
+                <!--<td></td> -->
+                <!--<td></td> -->
+                <td></td> 
+                <!--<td></td> -->
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>33</td> 
+                <td></td> 
+                <td>5-6pm</td> 
+                <td></td>
+                <!--<td></td> -->
+                <!--<td></td> -->
+                <td></td> 
+                <td></td> 
+                <!--<td></td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td></td> -->
+                <!--<td></td> -->
+                <!--<td></td> -->
+                <td></td> 
+                <!--<td></td> -->
+                <td></td> 
+            </tr> 
+            <tr class="divider"></tr>
+            <tr>
+                <td>34</td> 
+                <td class="day">thursday</td> 
+                <td>7-8am</td> 
+                <td rowspan="2">gst 123</td>
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>35</td> 
+                <td></td> 
+                <td>8-9am</td> 
+                <!--<td>gst 123</td>-->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td>csc 422</td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">mth 424</td> 
+                <td rowspan="2">mcb 426</td> 
+                <td rowspan="2">zly 426</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>36</td> 
+                <td></td> 
+                <td>9-10am</td> 
+                <td rowspan="2" colspan="2">mth 121</td>
+                <!--<td>mth 121</td> -->
+                <td rowspan="1">bch 222</td> 
+                <td rowspan="2">mth 121</td> 
+                <td rowspan="2">mth 226</td> 
+                <td rowspan="2">mth 121</td> 
+                <td></td> 
+                <td>csc 423</td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>mth 423</td> -->
+                <!--<td>mcb 426</td> -->
+                <!--<td>zly 426</td> -->
+                <td rowspan="2">chm 422</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>37</td> 
+                <td></td> 
+                <td>10-11am</td> 
+                <!--<td>mth 121</td>-->
+                <!--<td>mth 121</td> -->
+                <td></td> 
+                <!--<td>mth 121</td> -->
+                <!--<td>mth 226</td> -->
+                <!--<td>mth 121</td> -->
+                <td></td> 
+                <td>csc 424</td> 
+                <td rowspan="2">mth 326</td> 
+                <td rowspan="2">gly 222</td row> 
+                <td>mth 421</td> 
+                <td>mcb 422</td> 
+                <td rowspan="2">zly 427</td> 
+                <!--<td>chm 422</td> -->
+                <td></td> 
+                <td rowspan="3">mcb 222p</td>
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>38</td> 
+                <td></td> 
+                <td>11-12pm</td> 
+                <td></td>
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">phy 223</td> 
+                <td>sta 222</td> 
+                <td>mth 222</td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>mth 326</td> -->
+                <!--<td>gly 222</td> -->
+                <td>mth 422</td> 
+                <td rowspan="2">bot 423</td> 
+                <!--<td>zly 427</td> -->
+                <td rowspan="3">chm 226</td> 
+                <td>phy 424</td> 
+                <!--<td>mcb 222p</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>39</td> 
+                <td></td> 
+                <td>12-1pm</td> 
+                <td rowspan="2">csc 121</td>
+                <td></td> 
+                <td></td> 
+                <!--<td>phy 223</td> -->
+                <td rowspan="2">sta 225</td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="3">csc 221p</td> 
+                <td>mth 325</td> 
+                <td rowspan="2">gly 226</td> 
+                <td rowspan="2">chm 423</td> 
+                <!--<td>bot 423</td> -->
+                <td rowspan="2">phy 442</td> 
+                <!--<td>chm 226</td> -->
+                <td></td> 
+                <!--<td>mcb 222p</td> -->
+                <td></td> 
+                <td rowspan="3">zly 222p</td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>40</td> 
+                <td></td> 
+                <td>1-2pm</td> 
+                <!--<td>csc 121</td>-->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>sta 225</td> -->
+                <td></td> 
+                <td></td> 
+                <!--<td>csc 221p</td> -->
+                <td>mth 324</td> 
+                <!--<td>gly 226</td> -->
+                <!--<td>chm 423</td> -->
+                <td>bot 421</td> 
+                <!--<td>phy 442</td> -->
+                <!--<td>chm 226</td> -->
+                <td></td> 
+                <td rowspan="3"> mcb 121p</td> 
+                <td></td> 
+                <!--<td>zly 222p</td> -->
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>41</td> 
+                <td></td> 
+                <td>2-3pm</td> 
+                <td rowspan="2" colspan="2">chm 122</td>
+                <!--<td>chm 122</td> -->
+                <td></td> 
+                <td rowspan="2">chm 122</td> 
+                <td rowspan="2">chm 223</td> 
+                <td rowspan="2">chm 122</td> 
+                <td></td> 
+                <!--<td>csc 221p</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td>phy 429</td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>mcb 121p</td> -->
+                <td></td> 
+                <!--<td>zly 222p</td> -->
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>42</td> 
+                <td></td> 
+                <td>3-4pm</td> 
+                <!--<td>chm 122</td>-->
+                <!--<td>chm 122</td> -->
+                <td>csc 225</td> 
+                <!--<td>chm 122</td> -->
+                <!--<td>chm 223</td> -->
+                <!--<td>chm 122</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td>mcb 121p</td> -->
+                <td></td> 
+                <td rowspan="3">zly 224p</td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>43</td> 
+                <td></td> 
+                <td>4-5pm</td> 
+                <td></td>
+                <td>bly 122</td> 
+                <td rowspan="2">csc 223</td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">zly 223</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td></td> -->
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>44</td> 
+                <td></td> 
+                <td>5-6pm</td> 
+                <td></td>
+                <td>sta 121</td> 
+                <!--<td></td> -->
+                <td></td> 
+                <td></td> 
+                <!--<td></td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td></td> -->
+                <td></td> 
+            </tr> 
+            <tr class="divider"></tr>
+            <tr>
+                <td>45</td> 
+                <td class="day">friday</td> 
+                <td>7-8am</td> 
+                <td rowspan="2">gst 221</td>
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>46</td> 
+                <td></td> 
+                <td>8-9am</td> 
+                <!--<td>gst 221</td>-->
+                <td rowspan="2">zly 121</td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">sta 227</td> 
+                <td rowspan="2">gly 121</td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">mth 327</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>47</td> 
+                <td></td> 
+                <td>9-10am</td> 
+                <td>csc 121</td>
+                <!--<td>zly 121</td> -->
+                <td></td> 
+                <td></td> 
+                <!--<td>sta 227</td> -->
+                <!--<td>gly 121</td> -->
+                <td></td> 
+                <td></td> 
+                <!--<td>mth 327</td> -->
+                <td rowspan="2">gly 225</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="3">mcb 221p</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>48</td> 
+                <td></td> 
+                <td>10-11am</td> 
+                <td colspan="2" rowspan="2">phy 121</td>
+                <!--<td>phy 121</td> -->
+                <td></td> 
+                <td rowspan="2">phy 121</td> 
+                <td>sta 225</td> 
+                <td rowspan="2">phy 121</td> 
+                <td></td> 
+                <td rowspan="3">csc 223p</td> 
+                <td>mth 323</td> 
+                <!--<td>gly 225</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td></td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>49</td> 
+                <td></td> 
+                <td>11-12pm</td> 
+                <!--<td>phy 121</td>-->
+                <!--<td>phy 121</td> -->
+                <td></td> 
+                <!--<td>phy 121</td> -->
+                <td rowspan="2">sta 241</td> 
+                <!--<td>phy 121</td> -->
+                <td></td> 
+                <!--<td>csc 223p</td> -->
+                <td></td> 
+                <td rowspan="2">gly 227</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td></td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>50</td> 
+                <td></td> 
+                <td>12-1pm</td> 
+                <td colspan="3">bly 121</td>
+                <!--<td></td> -->
+                <!--<td></td> -->
+                <td></td> 
+                <!--<td>sta 241</td> -->
+                <td></td> 
+                <td></td> 
+                <!--<td>csc 223p</td> -->
+                <td></td> 
+                <!--<td>gly 227</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>51</td> 
+                <td></td> 
+                <td>1-2pm</td> 
+                <td></td>
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>52</td> 
+                <td></td> 
+                <td>2-3pm</td> 
+                <td rowspan="2">bly 224</td>
+                <td rowspan="2">mth 223</td> 
+                <td rowspan="2">mcb 221</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="3" colspan="3">phy 112</td> 
+                <!--<td></td> -->
+                <!--<td></td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>53</td> 
+                <td></td> 
+                <td>3-4pm</td> 
+                <!--<td>bly 224</td>-->
+                <!--<td>mth 223</td> -->
+                <!--<td>mcb 221</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td></td> -->
+                <!--<td></td> -->
+                <!--<td></td> --->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>54</td> 
+                <td></td> 
+                <td>4-5pm</td> 
+                <td rowspan="2">bly 222</td>
+                <td></td> 
+                <td rowspan="2">csc 228</td> 
+                <td></td> 
+                <td></td> 
+                <td rowspan="2">chm 224</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <!--<td></td> -->
+                <!--<td></td> -->
+                <!--<td></td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr> 
+            <tr>
+                <td>55</td> 
+                <td></td> 
+                <td>5-6pm</td> 
+                <!--<td>bly 222</td>-->
+                <td></td> 
+                <!--<td>csc 228</td> -->
+                <td></td> 
+                <td></td> 
+                <!--<td>chm 224</td> -->
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+            </tr>                                               
+            
+        </tbody>
+    </table>
+</body>
+</html>
